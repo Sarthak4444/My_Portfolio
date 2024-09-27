@@ -2,7 +2,7 @@ import React from "react";
 import HeroBanner from "./Sections/HeroBanner";
 import ToolsAndTech from "./Sections/ToolsAndTech";
 import AllProjects from "./Sections/AllProjects";
-import Testimonials from "./Sections/Testimonials";
+import Resume from "./Sections/Resume";
 import Lenis from "lenis";
 import "lenis/dist/lenis.css";
 
@@ -20,7 +20,7 @@ function App() {
       <HeroBanner />
       <ToolsAndTech />
       <AllProjects />
-      <Testimonials />
+      <Resume />
     </>
   );
 }
