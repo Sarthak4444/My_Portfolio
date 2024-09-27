@@ -8,7 +8,8 @@ function Subscribe() {
           Let's Connect
           <i className="fa-regular fa-envelope text-[#14E956] ml-3"></i>
         </span>
-        <form name="contact" netlify>
+        <form name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
           <div className="flex items-center justify-center md:flex-row flex-col gap-10">
             <div>
               <div>
@@ -44,11 +45,10 @@ function Subscribe() {
               />
             </div>
           </div>
+          <div className="p-2 px-7 hover:scale-110 w-fit cursorCustom-Pointer transition-all source-code-pro-800 rounded-full bg-black border-[2px] border-[#14E956] hover:bg-[#14E956] text-[#14E956] mt-14 hover:text-black">
+            <button type="submit">Submit</button>
+          </div>
         </form>
-
-        <div className="p-2 px-7 hover:scale-110 w-fit cursorCustom-Pointer transition-all source-code-pro-800 rounded-full bg-black border-[2px] border-[#14E956] hover:bg-[#14E956] text-[#14E956] mt-14 hover:text-black">
-          <button type="submit">Submit</button>
-        </div>
       </div>
     </>
   );
