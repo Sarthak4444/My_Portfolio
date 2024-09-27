@@ -83,7 +83,7 @@ const MatterCanvas = () => {
     for (let i = 0; i < 40; i++) {
       let x = Common.random(0, render.options.width);
       let y = Common.random(0, render.options.height);
-      let s = Common.random() > 0.35? Common.random(4, 30) : Common.random(30, 50);
+      let s = Common.random() > 0.3? Common.random(4, 30) : Common.random(30, 50);
       let polygonNumber = Common.random(6, 20);
       const body = Bodies.polygon(x, y, polygonNumber, s, {
         mass: s / 8,
@@ -141,9 +141,9 @@ const MatterCanvas = () => {
           const distance = Math.sqrt(dx * dx + dy * dy);
   
           // Increase attraction range
-          const attractionRange = 600; // Wider range for attraction
+          const attractionRange = 650; // Wider range for attraction
           if (distance < attractionRange) {
-            const forceMagnitude = (1 - distance / attractionRange) * 0.004; // Force decreases with distance
+            const forceMagnitude = (1 - distance / attractionRange) * 0.002; // Force decreases with distance
             Body.applyForce(body, body.position, {
               x: (dx / distance) * forceMagnitude,
               y: (dy / distance) * forceMagnitude,

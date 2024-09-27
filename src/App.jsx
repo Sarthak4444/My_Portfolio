@@ -3,6 +3,7 @@ import HeroBanner from "./Sections/HeroBanner";
 import ToolsAndTech from "./Sections/ToolsAndTech";
 import AllProjects from "./Sections/AllProjects";
 import Resume from "./Sections/Resume";
+import Footer from "./Sections/Footer";
 import Lenis from "lenis";
 import "lenis/dist/lenis.css";
 
@@ -21,6 +22,7 @@ function App() {
       <ToolsAndTech />
       <AllProjects />
       <Resume />
+      <Footer />
     </>
   );
 }

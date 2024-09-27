@@ -26,7 +26,7 @@ function Intro() {
   });
   return (
     <>
-      <div className="m-auto md:max-w-[1000px] px-6 max-w-full flex items-center md:flex-row flex-col justify-between min-h-[80vh]">
+      <div className="m-auto md:max-w-[1000px] max-w-full flex items-center px-6 md:flex-row flex-col justify-between min-h-[80vh]">
         <div ref={gsapRef}>
           <span className="source-code-pro-500 text-2xl flex flex-row items-center justify-center text-[#14E956] bg-[#115f3468] backdrop-blur-3xl w-fit p-3 rounded-2xl">
             Hi Everyone!
