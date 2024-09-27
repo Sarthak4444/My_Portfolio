@@ -20,7 +20,7 @@ function Subscribe() {
     e.preventDefault();
 
     emailjs.send(
-      'service_fjzpqtn',
+      'service_4hfa24g',
       'template_7oen4ln', 
       formData,
       '0jdk1nCiC32UiGoQ9' 
