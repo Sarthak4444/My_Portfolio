@@ -1,0 +1,37 @@
+import React from "react";
+import NavBar from "./../../Components/NavBar";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { useRef } from "react";
+
+function Header() {
+  const gsapRef = useRef(null);
+
+  useGSAP(() => {
+    gsap.from(gsapRef.current, {
+      duration: 3.5,
+      y: -50,
+      opacity: 0,
+      ease: "elastic.out(1.5, 0.7)",
+      delay: 0.2,
+    });
+  });
+
+  return (
+    <>
+      <div
+        ref={gsapRef}
+        className="flex flex-row items-center md:-mb-7 mb-14 justify-between px-6 m-auto h-28 md:max-w-[1400px] max-w-full "
+      >
+        <div className="flex flex-row items-center justify-start text-[#14E956] source-code-pro-800 text-4xl">
+httb
+        </div>
+        <div className="fixed right-7">
+          <NavBar />
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default Header;

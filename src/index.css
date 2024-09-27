@@ -1,0 +1,210 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #050810;
+}
+
+.source-code-pro-200 {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+.source-code-pro-300 {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.source-code-pro-400 {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.source-code-pro-500 {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.source-code-pro-600 {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.source-code-pro-700 {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.source-code-pro-800 {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+.source-code-pro-900 {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+@layer utilities {
+  .custom-cursor * {
+    cursor: url("/src/Images/Default-Cursor.png"), auto !important;
+  }
+}
+@layer utilities {
+  .cursorCustom-Pointer {
+    cursor: url("/src/Images/Pointer_Curser.png"), auto !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.custom-shape-divider-top-1727413063 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1727413063 svg {
+  position: relative;
+  display: block;
+  width: calc(134% + 1.3px);
+  height: 171px;
+}
+
+.custom-shape-divider-top-1727413063 .shape-fill {
+  fill: #06291B;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1727413063 svg {
+      width: calc(134% + 1.3px);
+      height: 67px;
+  }
+}
+
+.custom-shape-divider-bottom-1727160885 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1727160885 svg {
+  position: relative;
+  display: block;
+  width: calc(200% + 1.3px);
+  height: 191px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1727160885 .shape-fill {
+  fill: #051C13;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1727160885 svg {
+      width: calc(229% + 1.3px);
+      height: 124px;
+  }
+}
+
+.custom-shape-divider-top-1727413453 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1727413453 svg {
+  position: relative;
+  display: block;
+  width: calc(124% + 1.3px);
+  height: 103px;
+}
+
+.custom-shape-divider-top-1727413453 .shape-fill {
+  fill: #06291B;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-top-1727413453 svg {
+      width: calc(124% + 1.3px);
+      height: 112px;
+  }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1727413453 svg {
+      width: calc(153% + 1.3px);
+      height: 67px;
+  }
+}
+
+.custom-shape-divider-bottom-1727413771 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1727413771 svg {
+  position: relative;
+  display: block;
+  width: calc(181% + 1.3px);
+  height: 146px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1727413771 .shape-fill {
+  fill: #06291B;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-bottom-1727413771 svg {
+      width: calc(181% + 1.3px);
+      height: 112px;
+  }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1727413771 svg {
+      width: calc(179% + 1.3px);
+      height: 59px;
+  }
+}
