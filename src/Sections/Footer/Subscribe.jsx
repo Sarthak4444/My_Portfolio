@@ -1,6 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
+import emailjs from 'emailjs-com';
 
 function Subscribe() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+  const [isSent, setIsSent] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs.send(
+      'service_fjzpqtn',
+      'template_7oen4ln', 
+      formData,
+      '0jdk1nCiC32UiGoQ9' 
+    ).then((response) => {
+      console.log('Message sent successfully!', response.status, response.text);
+      setIsSent(true);
+    }).catch((err) => {
+      console.error('Failed to send message:', err);
+    });
+  };
+
   return (
     <>
       <div className="m-auto md:max-w-[1200px] max-w-full flex flex-col items-center justify-center">
@@ -8,47 +39,57 @@ function Subscribe() {
           Let's Connect
           <i className="fa-regular fa-envelope text-[#14E956] ml-3"></i>
         </span>
-        <form name="contact" method="POST" netlify>
-          <input type="hidden" name="form-name" value="contact" />
-          <div className="flex items-center justify-center md:flex-row flex-col gap-10">
-            <div>
+        {isSent ? (
+          <p className="text-green-500">Message sent successfully!</p>
+        ) : (
+          <form onSubmit={handleSubmit} name="contact">
+            <input type="hidden" name="form-name" value="contact" />
+            <div className="flex items-center justify-center md:flex-row flex-col gap-10">
               <div>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Enter your name"
+                <div>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Enter your name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                    className="w-72 md:w-96 bg-black text-[#14E956] source-code-pro-500 p-4 rounded-xl border-2 border-[#14E956] focus:outline-none focus:ring-2 focus:ring-[#14E956] focus:border-transparent"
+                  />
+                </div>
+
+                <div>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    className="w-72 md:w-96 bg-black mt-10 text-[#14E956] source-code-pro-500 p-4 rounded-xl border-2 border-[#14E956] focus:outline-none focus:ring-2 focus:ring-[#14E956] focus:border-transparent"
+                  />
+                </div>
+              </div>
+              <div>
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Hi, I would like to connect with you..."
+                  value={formData.message}
+                  onChange={handleChange}
                   required
                   className="w-72 md:w-96 bg-black text-[#14E956] source-code-pro-500 p-4 rounded-xl border-2 border-[#14E956] focus:outline-none focus:ring-2 focus:ring-[#14E956] focus:border-transparent"
-                />
-              </div>
-
-              <div>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Enter your email"
-                  required
-                  className="w-72 md:w-96 bg-black mt-10 text-[#14E956] source-code-pro-500 p-4 rounded-xl border-2 border-[#14E956] focus:outline-none focus:ring-2 focus:ring-[#14E956] focus:border-transparent"
+                  rows="5"
                 />
               </div>
             </div>
-            <div>
-              <textarea
-                name="message"
-                id="message"
-                placeholder="Hi, I would like to connect with you..."
-                required
-                className="w-72 md:w-96 bg-black text-[#14E956] source-code-pro-500 p-4 rounded-xl border-2 border-[#14E956] focus:outline-none focus:ring-2 focus:ring-[#14E956] focus:border-transparent"
-                rows="5"
-              />
+            <div className="p-2 px-7 hover:scale-110 w-fit cursorCustom-Pointer transition-all source-code-pro-800 rounded-full bg-black border-[2px] border-[#14E956] hover:bg-[#14E956] text-[#14E956] mt-14 hover:text-black">
+              <button type="submit">Submit</button>
             </div>
-          </div>
-          <div className="p-2 px-7 hover:scale-110 w-fit cursorCustom-Pointer transition-all source-code-pro-800 rounded-full bg-black border-[2px] border-[#14E956] hover:bg-[#14E956] text-[#14E956] mt-14 hover:text-black">
-            <button type="submit">Submit</button>
-          </div>
-        </form>
+          </form>
+        )}
       </div>
     </>
   );

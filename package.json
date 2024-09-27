@@ -13,6 +13,7 @@
     "@gsap/react": "^2.1.1",
     "@react-three/drei": "^9.114.0",
     "@react-three/fiber": "^8.17.8",
+    "emailjs-com": "^3.2.0",
     "gsap": "^3.12.5",
     "lenis": "^1.1.13",
     "matter-js": "^0.20.0",
