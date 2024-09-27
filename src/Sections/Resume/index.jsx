@@ -1,4 +1,5 @@
 import React from "react";
+import Resume from "./../../Images/Resume.png";
 
 function index() {
   return (
@@ -18,15 +19,15 @@ function index() {
           </svg>
         </div>
 
-        <div className="flex justify-center items-center md:flex-row flex-col p-10">
+        <div className="flex justify-center items-center md:flex-row flex-col p-10 max-w-[1000px] m-auto">
           <div>
-            <img src="" alt="resume" />
+            <img className="rounded-xl h-[300px] w-[600px] object-left-top md:mb-0 mb-16" src={Resume} alt="resume" />
           </div>
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center pl-0 md:pl-16">
             <h1 className="text-[#14E956] source-code-pro-800 text-4xl text-center mb-5">
               My Resume
             </h1>
-            <p className="text-white source-code-pro-500 text-lg leading-6">
+            <p className="text-white source-code-pro-500 text-lg leading-6 my-6">
               Checkout my resume if you are interested. It is in pdf format and
               can be downloaded.
             </p>
