@@ -8,7 +8,7 @@ function Subscribe() {
           Let's Connect
           <i className="fa-regular fa-envelope text-[#14E956] ml-3"></i>
         </span>
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" netlify>
           <input type="hidden" name="form-name" value="contact" />
           <div className="flex items-center justify-center md:flex-row flex-col gap-10">
             <div>
