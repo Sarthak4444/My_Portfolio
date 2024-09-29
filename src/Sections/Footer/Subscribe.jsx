@@ -40,9 +40,9 @@ function Subscribe() {
           <i className="fa-regular fa-envelope text-[#14E956] ml-3"></i>
         </span>
         {isSent ? (
-          <p className="text-green-500">Message sent successfully!</p>
+          <p className="text-[#14E956] source-code-pro-500 text-2xl">Message sent successfully!</p>
         ) : (
-          <form onSubmit={handleSubmit} name="contact">
+          <form onSubmit={handleSubmit} name="contact" className="flex flex-col justify-center items-center">
             <input type="hidden" name="form-name" value="contact" />
             <div className="flex items-center justify-center md:flex-row flex-col gap-10">
               <div>
@@ -85,7 +85,7 @@ function Subscribe() {
                 />
               </div>
             </div>
-            <div className="p-2 px-7 hover:scale-110 w-fit cursorCustom-Pointer transition-all source-code-pro-800 rounded-full bg-black border-[2px] border-[#14E956] hover:bg-[#14E956] text-[#14E956] mt-14 hover:text-black">
+            <div className="p-2 px-7 hover:scale-110 w-fit active:scale-100 active:bg-[#1d9744] text-xl cursorCustom-Pointer transition-all source-code-pro-700 rounded-full bg-black border-[2px] border-[#14E956] hover:bg-[#14E956] text-[#14E956] mt-14 hover:text-black">
               <button type="submit">Submit</button>
             </div>
           </form>

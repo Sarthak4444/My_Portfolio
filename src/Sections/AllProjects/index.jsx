@@ -58,7 +58,7 @@ function index() {
               <div className="flex-1 p-5 max-w-[400px]">
                 <div className="flex flex-col items-center justify-center">
                   <h1 className="text-[#14E956] source-code-pro-800 text-4xl text-center mb-5">
-                    EDUCFART
+                    EDUCRAFT
                   </h1>
                   <p className="text-white source-code-pro-500 text-lg leading-6">
                     EduCraft is an online platform designed to offer a seamless
