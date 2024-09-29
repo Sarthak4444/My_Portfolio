@@ -1,6 +1,4 @@
 import React from "react";
-import ElementHTML from "./ElementHTML";
-import ElementCSS from "./ElementCSS";
 
 function index() {
   return (
@@ -21,20 +19,6 @@ function index() {
           </svg>
         </div>
 
-        <div className="grid grid-cols-4">
-          <div>
-            <ElementHTML />
-          </div>
-          <div>
-          <ElementCSS />
-          </div>
-          <div>
-            <ElementHTML />
-          </div>
-          <div>
-          <ElementCSS />
-          </div>
-        </div>
         <div className="custom-shape-divider-bottom-1727160885">
           <svg
             data-name="Layer 1"

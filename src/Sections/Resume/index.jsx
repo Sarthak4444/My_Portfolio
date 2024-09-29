@@ -1,10 +1,48 @@
 import React from "react";
 import Resume from "./../../Images/Resume.png";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { useRef } from "react";
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useEffect } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function index() {
+
+  const gsapRef = useRef(null);
+  const gsapRef2 = useRef(null);
+  const gsapRef3 = useRef(null);
+
+  useGSAP(() => {
+    gsap.from(gsapRef.current, {
+      duration: 1.5,
+      x: -200,
+      opacity: 0,
+      ease: "power3.inOut",
+      scrollTrigger: {
+        trigger: gsapRef3.current, 
+        start: "top 70%",
+        end: "bottom bottom",
+      }});
+    });
+  
+    useGSAP(() => {
+    gsap.from(gsapRef2.current, {
+      duration: 1.5,
+      x: 200,
+      opacity: 0,
+      ease: "power3.inOut",
+      scrollTrigger: {
+        trigger: gsapRef3.current, 
+        start: "top 70%",
+        end: "bottom bottom",
+      }});
+    });
+
   return (
     <>
-      <div className="h-screen w-screen flex items-center justify-center relative">
+      <div ref={gsapRef3} className="h-screen w-screen flex items-center justify-center relative">
         <div className="custom-shape-divider-top-1727413453">
           <svg
             data-name="Layer 1"
@@ -20,10 +58,10 @@ function index() {
         </div>
 
         <div className="flex justify-center items-center md:flex-row flex-col p-10 max-w-[1000px] m-auto">
-          <div>
+          <div ref={gsapRef}>
             <img className="rounded-xl h-[300px] w-[600px] object-left-top md:mb-0 mb-16" src={Resume} alt="resume" />
           </div>
-          <div className="flex flex-col items-center justify-center pl-0 md:pl-16">
+          <div ref={gsapRef2} className="flex flex-col items-center justify-center pl-0 md:pl-16">
             <h1 className="text-[#14E956] source-code-pro-800 text-4xl text-center mb-5">
               My Resume
             </h1>
