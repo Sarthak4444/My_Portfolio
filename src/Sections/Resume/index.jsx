@@ -3,13 +3,12 @@ import Resume from "./../../Images/Resume.png";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useRef } from "react";
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function index() {
-
   const gsapRef = useRef(null);
   const gsapRef2 = useRef(null);
   const gsapRef3 = useRef(null);
@@ -21,28 +20,33 @@ function index() {
       opacity: 0,
       ease: "power3.inOut",
       scrollTrigger: {
-        trigger: gsapRef3.current, 
+        trigger: gsapRef3.current,
         start: "top 70%",
         end: "bottom bottom",
-      }});
+      },
     });
-  
-    useGSAP(() => {
+  });
+
+  useGSAP(() => {
     gsap.from(gsapRef2.current, {
       duration: 1.5,
       x: 200,
       opacity: 0,
       ease: "power3.inOut",
       scrollTrigger: {
-        trigger: gsapRef3.current, 
+        trigger: gsapRef3.current,
         start: "top 70%",
         end: "bottom bottom",
-      }});
+      },
     });
+  });
 
   return (
     <>
-      <div ref={gsapRef3} className="h-screen w-screen flex items-center justify-center relative">
+      <div
+        ref={gsapRef3}
+        className="h-screen w-screen flex items-center justify-center relative"
+      >
         <div className="custom-shape-divider-top-1727413453">
           <svg
             data-name="Layer 1"
@@ -59,23 +63,36 @@ function index() {
 
         <div className="flex justify-center items-center md:flex-row flex-col p-10 max-w-[1000px] m-auto">
           <div ref={gsapRef}>
-            <img className="rounded-xl h-[300px] w-[600px] object-left-top md:mb-0 mb-16" src={Resume} alt="resume" />
+            <img
+              className="rounded-xl h-[300px] w-[600px] object-left-top md:mb-0 mb-16"
+              src={Resume}
+              alt="resume"
+            />
           </div>
-          <div ref={gsapRef2} className="flex flex-col items-center justify-center pl-0 md:pl-16">
-            <h1 className="text-[#14E956] source-code-pro-800 text-4xl text-center mb-5">
+          <div
+            ref={gsapRef2}
+            className="flex flex-col items-center justify-center pl-0 md:pl-16"
+          >
+            <span className="source-code-pro-500 text-2xl flex flex-row items-center justify-center text-white bg-[#115f3468] backdrop-blur-3xl w-fit px-5 mb-4 p-3 rounded-2xl">
               My Resume
-            </h1>
+            </span>
             <p className="text-white source-code-pro-500 text-lg leading-6 my-6">
               Checkout my resume if you are interested. It is in pdf format and
               can be downloaded.
             </p>
             <div className="flex flex-row justify-center items-center gap-4">
-              <a href="https://docs.google.com/document/d/1YL-xHXeE81fxGZqgHSCTV3kBa_M7MFzjJCjgHKvvVxk/edit?usp=sharing" target="_blank">
+              <a
+                href="https://docs.google.com/document/d/1YL-xHXeE81fxGZqgHSCTV3kBa_M7MFzjJCjgHKvvVxk/edit?usp=sharing"
+                target="_blank"
+              >
                 <button className="p-2 px-7 hover:scale-110 cursorCustom-Pointer transition-all source-code-pro-800 rounded-full bg-transparent border-[2px] border-[#14E956] hover:bg-[#14E956] text-white mt-4 hover:text-black">
                   View
                 </button>
               </a>
-              <a href="./../../../../Public/Resume/Sarthak-Maurya_Resume.pdf" download="Sarthak-Maurya_Resume.pdf"> 
+              <a
+                href="./../../../../Public/Resume/Sarthak-Maurya_Resume.pdf"
+                download="Sarthak-Maurya_Resume.pdf"
+              >
                 <button className="p-2 px-7 hover:scale-110 cursorCustom-Pointer transition-all source-code-pro-800 rounded-full bg-transparent border-[2px] border-[#14E956] hover:bg-[#14E956] text-white mt-4 hover:text-black">
                   Download
                 </button>

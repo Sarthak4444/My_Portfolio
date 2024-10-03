@@ -1,4 +1,14 @@
 import React from "react";
+import html from "./../../Images/html.png";
+import css from "./../../Images/css.png";
+import javascript from "./../../Images/javascript.png";
+import react from "./../../Images/react.png";
+import redux from "./../../Images/redux.png";
+import git from "./../../Images/git.png";
+import github from "./../../Images/github.png";
+import tailwind from "./../../Images/tailwind.png";
+import bootstrap from "./../../Images/bootstrap.png";
+import typescript from "./../../Images/typescript.png";
 
 function index() {
   return (
@@ -19,6 +29,40 @@ function index() {
           </svg>
         </div>
 
+        <div className="flex flex-col justify-center items-center m-auto md:max-w-[1000px] max-w-full">
+          <span className="source-code-pro-500 text-2xl flex flex-row items-center justify-center text-white bg-[#115f3468] backdrop-blur-3xl w-fit px-5 mb-16 p-3 rounded-2xl">
+            Tools and Tech
+          </span>
+
+          <div className="grid md:grid-cols-10 grid-cols-5 grid-rows-2 md:grid-rows-1 gap-4">
+            <img className="hover:scale-125 transition-all" src={html} alt="html" />
+            <img className="hover:scale-125 transition-all" src={css} alt="css" />
+            <img className="hover:scale-125 transition-all" src={javascript} alt="javascript" />
+            <img className="hover:scale-125 transition-all" src={react} alt="react" />
+            <img className="hover:scale-125 transition-all" src={redux} alt="redux" />
+            <img className="hover:scale-125 transition-all" src={git} alt="git" />
+            <img className="hover:scale-125 transition-all" src={github} alt="github" />
+            <img className="hover:scale-125 transition-all" src={tailwind} alt="tailwind" />
+            <img className="hover:scale-125 transition-all" src={bootstrap} alt="bootstrap" />
+            <img className="hover:scale-125 transition-all" src={typescript} alt="typescript" />
+          </div>
+
+          <p className="text-white text-center source-code-pro-500 mt-10 px-3">
+            I specialise in building responsive and dynamic web applications
+            using a strong foundation in{" "}
+            <span className="text-[#14E956]">HTML</span>,{" "}
+            <span className="text-[#14E956]">CSS</span>,{" "}
+            <span className="text-[#14E956]">Javascript</span>,{" "}
+            <span className="text-[#14E956]">React.js</span>,{" "} and {" "}
+            <span className="text-[#14E956]">Redux</span>. I’m proficient with
+            modern tools like <span className="text-[#14E956]">Tailwind</span>,{" "}
+            <span className="text-[#14E956]">Bootstrap</span>,{" "} and {" "}
+            <span className="text-[#14E956]">TypeScript</span>,{" "} and I manage my
+            projects effectively using{" "}
+            <span className="text-[#14E956]">Git</span>{" "} and {" "}
+            <span className="text-[#14E956]">GitHub</span>
+          </p>
+        </div>
         <div className="custom-shape-divider-bottom-1727160885">
           <svg
             data-name="Layer 1"

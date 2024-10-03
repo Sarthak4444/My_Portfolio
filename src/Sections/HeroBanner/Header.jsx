@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "./../../Components/NavBar";
+import SocialLinks from "./SocialLinks";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useRef } from "react";
@@ -31,10 +32,10 @@ function Header() {
             alt="Sarthak"
           />
         </div>
-        <div className="fixed right-7">
+      </div>
+        <div className="fixed top-0 right-0" >
           <NavBar />
         </div>
-      </div>
     </>
   );
 }
