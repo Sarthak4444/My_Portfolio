@@ -60,7 +60,7 @@ function index() {
             <span className="text-[#14E956]">TypeScript</span>,{" "} and I manage my
             projects effectively using{" "}
             <span className="text-[#14E956]">Git</span>{" "} and {" "}
-            <span className="text-[#14E956]">GitHub</span>
+            <span className="text-[#14E956]">GitHub</span>.Additionally, I have expertise in <span className="text-[#14E956]">Next.js</span>, <span className="text-[#14E956]">Node.js</span>, <span className="text-[#14E956]">Express</span>, <span className="text-[#14E956]">MongoDB</span>, and <span className="text-[#14E956]">PostgreSQL</span>, enabling me to deliver full-stack solutions with efficient server-side functionality and robust databases.
           </p>
         </div>
         <div className="custom-shape-divider-bottom-1727160885">
