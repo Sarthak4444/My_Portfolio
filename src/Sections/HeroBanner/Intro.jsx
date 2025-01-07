@@ -36,7 +36,7 @@ function Intro() {
             I'm Sarthak <br />
             <span className="text-[#14E956] source-code-pro-900">
               <ReactTyped
-                strings={["Frontend Engineer"]}
+                strings={["Fullstack Engineer"]}
                 typeSpeed={130}
                 backSpeed={50}
                 loop={true}
