@@ -34,7 +34,6 @@ function Header() {
         </div>
       </div>
         <div className="fixed top-0 right-0" >
-          <NavBar />
         </div>
     </>
   );
