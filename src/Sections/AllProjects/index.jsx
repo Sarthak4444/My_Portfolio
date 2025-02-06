@@ -1,7 +1,7 @@
 import React from "react";
-import EducraftMockup from "./../../Images/EducraftMockup.png";
-import SentiMockup from "./../../Images/SentiMockup.png";
-import ATWMockup from "./../../Images/ATWMockup.png";
+import MauryasEvents from "./../../Images/MauryasEvents.png";
+import MauryasCuisine from "./../../Images/MauryasCuisine.png";
+import Lume from "./../../Images/Lume.png";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useRef } from "react";
@@ -44,29 +44,30 @@ function index() {
             <span className="md:min-w-[900px] min-w-[300px] md:min-h-[400px] min-h-[500px] flex flex-col md:flex-row items-center justify-center rounded-3xl backdrop-blur-lg bg-[#02170950] border-[4px] border-[#14dd57ab] ">
               <div className="flex-2">
                 <a
-                  href="http://educraft-shop.netlify.app/"
+                  href="https://mauryasevents.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img
                     className="w-[500px] hover:scale-110 cursorCustom-Pointer transition-all"
-                    src={EducraftMockup}
-                    alt="Educraft"
+                    src={MauryasEvents}
+                    alt="MauryasEvents"
                   />
                 </a>
               </div>
               <div className="flex-1 p-5 max-w-[400px]">
                 <div className="flex flex-col items-center justify-center">
                   <h1 className="text-[#14E956] source-code-pro-800 text-4xl text-center mb-5">
-                    EDUCRAFT
+                    MAURYAS EVENTS
                   </h1>
                   <p className="text-white source-code-pro-500 text-lg leading-6">
-                    EduCraft is an online platform designed to offer a seamless
-                    experience for purchasing courses and books, built using
-                    React and styled with Tailwind CSS.
+                    This is a private event booking platform built with Next.js,
+                    React.js, and MongoDB. Users can reserve events with a fee,
+                    securely processed via Stripe, and receive instant email
+                    confirmations via Nodemailer.
                   </p>
                   <a
-                    href="http://educraft-shop.netlify.app/"
+                    href="https://mauryasevents.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -81,29 +82,30 @@ function index() {
             <span className="md:min-w-[900px] min-w-[300px] md:min-h-[400px] min-h-[500px] flex flex-col md:flex-row items-center justify-center rounded-3xl backdrop-blur-lg bg-[#02170950] border-[4px] border-[#14dd57ab] ">
               <div className="flex-2">
                 <a
-                  href="http://senti-store.netlify.app/"
+                  href="https://lume-sepia.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img
                     className="w-[500px] hover:scale-110 cursorCustom-Pointer transition-all"
-                    src={SentiMockup}
-                    alt="Senti"
+                    src={Lume}
+                    alt="Lume"
                   />
                 </a>
               </div>
               <div className="flex-1 p-5 max-w-[400px]">
                 <div className="flex flex-col items-center justify-center">
                   <h1 className="text-[#14E956] source-code-pro-800 text-4xl text-center mb-5">
-                    SENTI
+                    LUME
                   </h1>
                   <p className="text-white source-code-pro-500 text-lg leading-6">
-                    Senti is a modern eCommerce website designed for a seamless
-                    shopping experience, built using React.js, Redux and
-                    Tailwind CSS.
+                    This is a journaling platform that helps users track their
+                    daily entries and emotions with mood analytics. Built with
+                    Next.js, React.js, PostgreSQL, and Clerk, it offers a
+                    seamless writing experience and secure authentication
                   </p>
                   <a
-                    href="http://senti-store.netlify.app/"
+                    href="https://lume-sepia.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -118,29 +120,31 @@ function index() {
             <span className="md:min-w-[900px] min-w-[300px] md:min-h-[400px] min-h-[500px] flex flex-col md:flex-row items-center justify-center rounded-3xl backdrop-blur-lg bg-[#02170950] border-[4px] border-[#14dd57ab] ">
               <div className="flex-2">
                 <a
-                  href="https://all-countries-info-app.netlify.app/"
+                  href="https://mauryascuisine.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img
                     className="w-[500px] hover:scale-110 cursorCustom-Pointer transition-all"
-                    src={ATWMockup}
-                    alt="Around the World"
+                    src={MauryasCuisine}
+                    alt="MauryasCuisine"
                   />
                 </a>
               </div>
               <div className="flex-1 p-5 max-w-[400px]">
                 <div className="flex flex-col items-center justify-center">
                   <h1 className="text-[#14E956] source-code-pro-800 text-4xl text-center mb-5">
-                    ATW
+                    MAURYAS CUISINE
                   </h1>
                   <p className="text-white source-code-pro-500 text-lg leading-6">
-                    ATW (Around The World) is an information-rich website
-                    offering detailed insights about over 250 countries,
-                    developed using React and Tailwind CSS.
+                    MauryasCuisine is a modern restaurant platform built with
+                    Next.js and MongoDB, offering seamless table reservations,
+                    gift card purchases, and a loyalty rewards system. Users can
+                    book tables, buy and redeem gift cards, and earn points on
+                    purchases.
                   </p>
                   <a
-                    href="https://all-countries-info-app.netlify.app/"
+                    href="https://mauryascuisine.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
