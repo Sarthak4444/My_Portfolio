@@ -49,7 +49,7 @@ function index() {
                   rel="noopener noreferrer"
                 >
                   <img
-                    className="w-[500px] hover:scale-110 cursorCustom-Pointer transition-all"
+                    className="w-[400px] object-cover h-[300px] hover:scale-110 cursorCustom-Pointer transition-all"
                     src={MauryasEvents}
                     alt="MauryasEvents"
                   />
@@ -87,7 +87,7 @@ function index() {
                   rel="noopener noreferrer"
                 >
                   <img
-                    className="w-[500px] hover:scale-110 cursorCustom-Pointer transition-all"
+                    className="w-[400px] h-[300px] object-cover hover:scale-110 cursorCustom-Pointer transition-all"
                     src={Lume}
                     alt="Lume"
                   />
@@ -125,7 +125,7 @@ function index() {
                   rel="noopener noreferrer"
                 >
                   <img
-                    className="w-[500px] hover:scale-110 cursorCustom-Pointer transition-all"
+                    className="w-[400px] h-[300px] object-cover hover:scale-110 cursorCustom-Pointer transition-all"
                     src={MauryasCuisine}
                     alt="MauryasCuisine"
                   />

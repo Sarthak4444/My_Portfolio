@@ -81,7 +81,7 @@ function index() {
             </p>
             <div className="flex flex-row justify-center items-center gap-4">
               <a
-                href="https://docs.google.com/document/d/1YL-xHXeE81fxGZqgHSCTV3kBa_M7MFzjJCjgHKvvVxk/edit?usp=sharing"
+                href="https://drive.google.com/file/d/1b3BtKW7o4JyyNYqsAAkRzgYCTPPOYV-z/view?usp=sharing"
                 target="_blank"
               >
                 <button className="p-2 px-7 hover:scale-110 cursorCustom-Pointer transition-all source-code-pro-800 rounded-full bg-transparent border-[2px] border-[#14E956] hover:bg-[#14E956] text-white mt-4 hover:text-black">
