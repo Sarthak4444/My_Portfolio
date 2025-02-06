@@ -9,6 +9,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
+
 function index() {
   const gsapRef = useRef(null);
   const gsapRef2 = useRef(null);
