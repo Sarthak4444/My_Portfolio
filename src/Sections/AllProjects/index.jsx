@@ -1,7 +1,7 @@
 import React from "react";
-import MauryasEvents from "./../../Images/MauryasEvents.png";
-import MauryasCuisine from "./../../Images/MauryasCuisine.png";
-import Lume from "./../../Images/Lume.png";
+import MauryasEvents from "./MauryasEvents.png";
+import MauryasCuisine from "./MauryasCuisine.png";
+import Lume from "./Lume.png";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useRef } from "react";
